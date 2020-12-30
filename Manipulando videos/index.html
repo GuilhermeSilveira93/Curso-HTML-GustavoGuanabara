@@ -6,15 +6,26 @@
     <title>Inserindo Videos com HTML 5</title>
 </head>
 <body>
+
+
+    <!--Videos de Hospedagem propria (computador) consome mais espaço de hospedagem, deixando assim mais caro  o serviço-->
     <h1>Exemplo de como se manipula videos</h1>
     <H2>Esse video está hospedado em meu proprio servidor</H2>
+        <video type="meta" controls width="500px" poster="midia/limoes.jpg">
+            <source src="midia/videomp4.mp4">
+            <source src="midia/Videom4v.m4v">
+            <source src="midia/Videowebm.webm">
+                <p>Seu navegador não é compativel com o video, clique <a href="midia/videomp4.mp4">AQUI</a> para baixar.</p>
+        </video>
+<!--Videos de Hospedagem propria (computador) consome mais espaço de hospedagem, deixando assim mais caro  o serviço-->
 
-    <video type="meta" controls width="500px" poster="midia/limoes.jpg">
-        <source src="midia/videomp4.mp4">
-        <source src="midia/Videom4v.m4v">
-        <source src="midia/Videowebm.webm">
-            <p>Seu navegador não é compativel com o video, clique <a href="midia/videomp4.mp4">AQUI</a> para baixar.</p>
-    </video>
 
+
+<!--Videos de Hospedagem terceirizada (youtube / vimeo ) consome menos espaço de hospedagem, deixando assim mais baroto  o serviço-->
+    <h1>Inserir Videos do youtube</h1>
+    <iframe width="500" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!--Videos de Hospedagem terceirizada (youtube / vimeo ) consome menos espaço de hospedagem, deixando assim mais baroto  o serviço-->
+
+    
 </body>
 </html>
