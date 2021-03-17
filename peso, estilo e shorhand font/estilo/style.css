@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    font-family: 'Work Sans';
+    width: 80%;
+    height: 100%;
+    margin: 15px  auto;
+}
+h1{
+    text-align: center;
+    /*USANDO FONT-STYLE ( PS: A FONTE TEM QUE TER SUPORTE ÁS OPÇÕES !!!*/
+    font-style: italic;
+
+    /*MUDA O ESTILO DA FONTE DENTRO DO CSS, AI NÃO PRECISA COLOCAR O <S> <U> <B> <I>*/
+    text-decoration: overline;
+    text-decoration: underline;
+}
+.palavras h2,p{
+    margin-top: 20px;
+
+    /*VAMOS MANIPULAR O PESO DA FONTE*/
+    font-weight: bold;
+    /*PESO COM PALAVRAS : LIGHTER NORMAL BOLD BOLDER*/
+}
+.numeros > p,h2{
+
+    margin-top: 20px;
+    /*PESO COM NUMEROS : COMEÇA EM 100 E VAI ATÉ 900 ( 100-900 )*/
+    font-weight: 300;
+}
+
+/* FAZENDO UM SHORTHAND ( TODAS AS PRIORIDADES DE FONTES EM UMA UNICA LINHA*/
+
+.shorthand > p{
+    /* depois de font, tem que colocar as propriedades na exata ordem: font-style -> font-weight -> font-size -> font-family.. do jeito que está abaixo*/
+    font: italic 100 20px sans-serif;
+}
+
