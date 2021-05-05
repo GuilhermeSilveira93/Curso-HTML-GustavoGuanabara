@@ -5,21 +5,40 @@
 body,html{
     margin: 10px;
 }
-div{
-    background-color: gray;
-    border: 1px solid black;
-    text-align: center;
-    width: 200px;
-    height: 200px;
-    display: inline-block;
-    margin-right: -4px;
+/* PSEUDO CLASSES DEFINEM ESTADOS DE ELEMENTOS
+a{
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
 }
-div:hover{
-    background-color: blue;
+a:visited{
+    color: darkred;
 }
-div > p{
-    display: none;
+a:hover{
+    text-decoration: underline;
 }
-div:hover > p{
-    display: block;
+a:active{
+    color: blue;
+}*/
+
+/*PSEUDO ELEMENTOS PODEM AGIR NO CONTEUDO DOS ELEMENTOS é o que tem 2x :: */
+a{
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}
+a::before{
+    content: '‣ '
+}
+a::after{
+    content: ' °';
+    font-weight: normal;
+    color: green;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+a:active{
+    color: blue;
 }
