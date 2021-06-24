@@ -3,13 +3,21 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+ /* VARIAVEIS */
+:root{
+    --cor1: #84E1AD;
+
+    --fonte-padrao: arial, verdana, helvetica;
+}
+
 @font-face{
     font-family: android;
     src:url(../fontes/idroid.otf)
 }
 hmtl,body{
     width: 100%;
-    background-color: #84E1AD;
+    background-color: var(--cor1); /* CHAMANDO A VARIAVEL*/
 }
 .clear{
     clear: both;
